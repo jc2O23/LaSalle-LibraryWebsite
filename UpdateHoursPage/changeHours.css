@@ -1,0 +1,21 @@
+/**** Custom styles for the "Change Hours" and "Preview Hours" boxes ****/
+
+#mainDiv {
+  font-size: 16px;
+}
+
+#mainDiv #fieldDiv div {
+  padding: 1rem;
+}
+#mainDiv div input {
+  margin: 5px;
+width: 350px;
+}
+#fieldDiv div button {
+  width: 50px;
+}
+
+#set-hours {
+  background-color: #ffce00;
+  padding: 1.5rem 2rem;
+}
