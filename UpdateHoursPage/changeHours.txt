@@ -1,0 +1,9 @@
+The purpose of this script was to make it easier for any staff member of La Salle’s Connelly Library to update the hours of operation found on the front page of the library website (https://library.lasalle.edu). 
+
+The previous method required the use of a CSV that had to be downloaded, changed and then reuploaded to update the hours. The CSV file had to be structured in specific way which meant that if you didn’t know how to edit the file, it could cause the hours to not be displayed properly. There was a fallback method in place that if there was an error within the JavaScript, it would just display the normal semester hours with a message to contact the library for up-to-date information on the operational hours. 
+
+The new method I came up with aimed to eliminate the need for a CSV file and just take use of the web platform LibGudies to change the hours. The main idea behind the script is to use two HTML content boxes on a non-published webpage to create a form that can be used to change the hours. The first content box has a script that when initialized, looks at the second content box to dynamically create rows for each day/time that are displayed on the operational hours. The first content box can be edited and then when saved, saves that data from the form into the second content box. This creates the cyle that the first content box is filled with data from the second content box and the second content box is only updated by the first content box. The data from the second content box is then pulled to the main page of the website with some short code. 
+
+This reduces the chance of error when handling the CSV file and removes having to download/upload at all. This also makes it easier to update the hours from a mobile device. 
+
+The custom CSS is there to make it more user friendly. 
